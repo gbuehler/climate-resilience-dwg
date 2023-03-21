@@ -2,7 +2,7 @@ name: generate_2023-07_Pilot-ER
 on:
   push:
     branches:
-    - master
+    - main
     
 #  schedule:
 #    - cron:  '1 22 * * *'
