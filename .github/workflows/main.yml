@@ -19,7 +19,7 @@ jobs:
       - name: Checkout other repo
         uses: actions/checkout@v3       # checkout the repository content to github runner
         with:
-          repository: opengeospatial/climate-resilience-dwg
+          repository: gbuehler/climate-resilience-dwg
           path: 2023-07_Pilot-ER
       - name: Generate document
         run: |
@@ -31,10 +31,11 @@ jobs:
           
           metanorma compile  -t ogc -x  xml,html,pdf --agree-to-terms document.adoc
            
-          # mv ./target/document.html ../main/23-016.html
+          mv ./target/document.html ../main/23-016.html
+          mv ./target/document.pdf ../main/23-016.pdf
           # cd ../main
-          git config --global user.name 'opengeospatial'
-          git config --global user.email 'opengeospatial@users.noreply.github.com'
+          git config --global user.name 'gbuehler'
+          git config --global user.email 'gbuehler@ogc.org'
           git add .
           git commit --message "Automated generation of HTML document"
           git push
