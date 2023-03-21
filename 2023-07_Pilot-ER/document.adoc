@@ -8,11 +8,11 @@
 :comment: ### Internal reference number; mandatory
 :docnumber: ???
 :comment: ### Date on which the standard was updated; mandatory
-:received-date: # 2023-??
+:received-date: # 2023-12-31
 :comment: ### Date on which the standard was approved by the issuing authority; mandatory
-:issued-date: # 2023-??
+:issued-date: # 2023-12-31
 :comment: ### Date on which the standard was published; mandatory
-:published-date: # 2023-??
+:published-date: # 2023-12-31
 :comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
 :external-id: ???
 :comment: ### Author one
