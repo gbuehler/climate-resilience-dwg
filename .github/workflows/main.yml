@@ -31,9 +31,9 @@ jobs:
           
           metanorma compile  -t ogc -x  xml,html,pdf --agree-to-terms document.adoc
            
-          mv document.html ../main/23-016.html
-          mv document.pdf ../main/23-016.pdf
-          cd ../main
+          mv document.html 23-016.html
+          mv document.pdf 23-016.pdf
+        
           git config --global user.name 'gbuehler'
           git config --global user.email 'gbuehler@ogc.org'
           git add .
